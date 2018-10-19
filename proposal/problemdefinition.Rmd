@@ -11,3 +11,28 @@ It is important to cover:
 -->
 
 
+
+## Problem Definition
+
+The problem with the current cloud offering is the limited range of supported languages which usually includes Python, JavaScript, C# and Java. 
+
+- [Azure](https://docs.microsoft.com/en-us/azure/azure-functions/supported-languages): C#, JavaScript (Node.js), F#, Java, Python
+- [AWS](https://aws.amazon.com/lambda/faqs/): JavaScript (Node.js), Python, Java, C# and Go
+- [Google Cloud](https://cloud.google.com/functions/docs/writing/): JavaScript (Node.js), Python
+
+Creating serverless infrastructure would enable R-users to fully take advantage of modern cloud providers. This includes:
+
+
+
+## Overview
+
+Prototyp-Interface:
+
+functions.json - bindings & triggers
+run.R - in, out
+
+![Technical Overview](proposal/img/serverless.png)
+
+
+
+

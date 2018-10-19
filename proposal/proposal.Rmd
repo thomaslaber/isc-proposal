@@ -8,6 +8,9 @@ This is where the proposal should be outlined.
 At a high-level address what your proposal is and how it will address the problem identified. Highlight any benefits to the R Community that follow from solving the problem. This should be your most compelling section.
 -->
 
+Serverless R - Framework for Azure/Fn/OpenWhisk/Kubernetes (anything with Docker support really). RStudio-CLI for deploying R-serverless-jobs. 
+
+
 ## Detail
 <!--
 Go into more detail about the specifics of the project and it delivers against the problem.

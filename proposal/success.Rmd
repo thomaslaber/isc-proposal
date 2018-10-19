@@ -8,15 +8,22 @@ Projects should have a definition of done that is measurable, and a thorough und
 What does success look like? 
 -->
 
+A working framework that enables R-users to send commands to a supported cloud provider via Rstudio on a CLI (GUI might follow later).
+
+
 ## Measuring success
 <!-- 
 How will we know when success is achieved, what markers can we use along the way 
 -->
+For a first PoC a full implementition on MS Azure is considered. A first prototyp has been already created there. 
 
 ## Future work
 <!-- 
 How could this be extended / developed in the future by yourself and/or the community in general?
 -->
+
+
+
 
 ## Key risks
 <!-- 

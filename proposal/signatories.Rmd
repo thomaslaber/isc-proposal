@@ -5,18 +5,37 @@ This section provides the ISC with a view of the support received from the commu
 An optional section would be for R-Core signatories where changes to R are proposed.
 -->
 
+Presented at the [EARL conference in London](https://earlconf.com/2018/london/) in September 2018 by Christoph Bodner for the [Austrian Post](https://www.post.at/en/). Furthermore, R meetups and conferences have been visited in order to present the state of the project. 
+
+
 ## Project team
 <!-- 
 Who are the people responsible for actually delivering the project if the proposal gets accepted and are already signed up and rearing to go?
 -->
+
+- Christoph Bodner
+- Thomas Laber
+
 
 ## Contributors
 <!-- 
 Who are the people who have actively helped with this proposal but won't necessarily be on the core project team later?
 -->
 
+- Christoph Bodner
+- Thomas Laber
+
+
 ## Consulted
 <!-- 
 Who has been given the opportunity to provide feedback on the proposal? This should include any R Consortium & ISC members who the proposal has been discussed with.
 -->
+
+- [Kurt Hornik](https://de.wikipedia.org/wiki/Kurt_Hornik) - 
+- [David Smith](https://www.linkedin.com/in/dmsmith/) - Cloud Developer Advocate at Microsoft
+(Email: davidsmi@microsoft.com) *ToDo:* We should reach out to this guy: https://www.linkedin.com/in/dmsmith/
+Weil: https://www.r-consortium.org/about/governance
+- [Florian Motlik](https://www.linkedin.com/in/florianmotlik/) - Founder Cloudthropology, Former serverless.com- and Codeshop-CTO
+- [Joseph Noronha](https://www.linkedin.com/in/josephnoronha/) - Director at Detecon USA
+- ...
 

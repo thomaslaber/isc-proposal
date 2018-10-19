@@ -11,6 +11,7 @@ Covering the planning phase, this section should provide a relatively detailed p
 -->
 
 
+
 ## Technical delivery
 <!--
 Covering the actual delivery of the project this section should provide at least a high-level the implementation. 
