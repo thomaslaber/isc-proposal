@@ -14,6 +14,16 @@ It is important to cover:
 
 ## Problem Definition
 
+R is a great language for rapid prototyping and experimentation, but putting an R model in production is still more complex and time-consuming than it needs to be. Putting a model in production usually requires:
+
+- a training environment with strong cpus/gpus for fast (re-)training
+- a scoring environment to serve predictions
+
+(Re)training of models is a 'classic' batch job. Setting up a serverless training environment that scales on demand is possible by using for example Azure Batch Services, AWS Batch or any other batch service provider that supports custom runtimes. The batch training job stores R models in some container storage.
+
+However, setting up a serverless scoring enviroment is 
+
+
 The problem with the current cloud offering is the limited range of supported languages which usually includes Python, JavaScript, C# and Java. 
 
 - [Azure](https://docs.microsoft.com/en-us/azure/azure-functions/supported-languages): C#, JavaScript (Node.js), F#, Java, Python
