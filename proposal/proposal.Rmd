@@ -8,7 +8,18 @@ This is where the proposal should be outlined.
 At a high-level address what your proposal is and how it will address the problem identified. Highlight any benefits to the R Community that follow from solving the problem. This should be your most compelling section.
 -->
 
-Serverless R - Framework for Azure/Fn/OpenWhisk/Kubernetes (anything with Docker support really). RStudio-CLI for deploying R-serverless-jobs. 
+We want to help R developers to leverage serverless computing for training and scoring R models. We want to build a plattform independent framework that allows R developers to deploy their solution to different cloud providers with a consistent, unified API.
+
+We want to build a framework similar to serverless.com but specifically targeted to R users.
+
+R developers should be able to:
+
+- deploy arbitrary R code using an arbitary R runtime
+- using a consistent API for different cloud providers
+
+We want to build a CLI to provision:
+- Serverless batch jobs
+- Serverless functions
 
 
 ## Detail
@@ -21,3 +32,9 @@ Depending on project type the detail section should include:
  - [ ] Architecture
  - [ ] Assumptions
 -->
+
+- Batch: Extent doAzureParallel()
+- Functions: 
+
+Serverless R - Framework for Azure/Fn/OpenWhisk/Kubernetes (anything with Docker support really). RStudio-CLI for deploying R-serverless-jobs. 
+
