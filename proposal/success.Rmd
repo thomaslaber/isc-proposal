@@ -8,7 +8,7 @@ Projects should have a definition of done that is measurable, and a thorough und
 What does success look like? 
 -->
 
-A working framework that enables R-users to send commands to at least one supported cloud provider via Rstudio on a CLI (GUI might follow later).
+A working framework that enables R users to send commands to at least one fully supported cloud provider via RStudio on a CLI (GUI might follow later).
 
 
 ## Measuring success
@@ -16,6 +16,10 @@ A working framework that enables R-users to send commands to at least one suppor
 How will we know when success is achieved, what markers can we use along the way 
 -->
 For a first PoC a full implementition on MS Azure is considered. A first prototyp has been already created there. 
+
+1. create config & start pools
+2. submit a job & store results
+3. process results
 
 Specific (simple, sensible, significant).
 Measurable (meaningful, motivating).
@@ -28,8 +32,7 @@ Time bound (time-based, time limited, time/cost limited, timely, time-sensitive)
 How could this be extended / developed in the future by yourself and/or the community in general?
 -->
 
-
-
+In the envisioned final stage of this project, jobs can be send via an Rstudio-GUI. Users can select from a list of supported cloud providers and enter their job specifications there. 
 
 ## Key risks
 <!-- 
@@ -41,3 +44,5 @@ What sort of things could come up that can delay or break the project?
  - [ ] Costs
 
 -->
+
+
