@@ -10,7 +10,9 @@ Covering the planning phase, this section should provide a relatively detailed p
  - [ ] Reporting framework
 -->
 
-
+1. Collaboration platform: All code will hosted publicly on a git repository. All contributors will have clear responsabilites and work packages.
+2. Licence: We are planning to license under the commonly used [MIT License](https://www.r-project.org/Licenses/MIT).
+3. Reporting: As mentioned above, ideally github will serve as main collaboration platform. Therefore, all changes, progress and issues will be reported there.
 
 ## Technical delivery
 <!--
@@ -18,6 +20,8 @@ Covering the actual delivery of the project this section should provide at least
 
 Including target dates is really important as you need to be committed and the ISC need to have a means of tracking delivery
 -->
+
+
 
 ## Other aspects
 <!--
