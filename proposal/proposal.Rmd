@@ -10,7 +10,7 @@ At a high-level address what your proposal is and how it will address the proble
 
 We want to help R developers to leverage serverless computing for training and scoring R models. We want to build a plattform independent framework that allows R developers to deploy their solution to different cloud providers with a consistent, unified API.
 
-We want to build a framework similar to serverless.com but specifically targeted to R users.
+We want to build a framework similar to [serverless.com](http://serverless.com/) but specifically targeted to R users.
 
 R developers should be able to:
 
@@ -20,8 +20,6 @@ R developers should be able to:
 We want to build a CLI to provision:
 - Serverless batch jobs
 - Serverless functions
-
-
 
 ## Detail
 <!--
@@ -58,5 +56,7 @@ AWS Lambda : https://github.com/grycap/scar
 
 Serverless R - Framework for Azure/Fn/OpenWhisk/Kubernetes (anything with Docker support really). RStudio-CLI for deploying R-serverless-jobs. 
 
+- Batch: Extent doAzureParallel()
+- Functions: 
 
-
+Serverless R - Framework for Azure/Fn/OpenWhisk/Kubernetes (anything with Docker support really). RStudio-CLI for deploying R-serverless-jobs.
