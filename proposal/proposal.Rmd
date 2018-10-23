@@ -60,3 +60,4 @@ Serverless R - Framework for Azure/Fn/OpenWhisk/Kubernetes (anything with Docker
 - Functions: 
 
 Serverless R - Framework for Azure/Fn/OpenWhisk/Kubernetes (anything with Docker support really). RStudio-CLI for deploying R-serverless-jobs.
+

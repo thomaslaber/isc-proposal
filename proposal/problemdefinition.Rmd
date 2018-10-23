@@ -10,9 +10,11 @@ It is important to cover:
  - [ ] Why it should be tackled
 -->
 
+
 ## Problem Definition
 
 R is a great language for rapid prototyping and experimentation, but putting an R model in production is still more complex and time-consuming than it needs to be. With the growing popularity of serverless computing frameworks we see a a huge chance to allow R developers to easily deploy their code into production in a plattform independent manner.
+
 
 Putting an R model in production usually requires two environments:
 
@@ -26,7 +28,8 @@ Training can usually be handled with batch jobs and there are various offerings 
 - Google Compute Engine
 
 
-While the support for Docker images allows us to run workloads on any provider that supports Docker they lack of a consistent API for:
+While the support for Docker images allows us to run workloads on any provider that supports Docker the lack of a consistent API for:
+
 
 - defining compute pool resources (e.g. 3 nodes, ubuntu with 2 cores each)
 - defining jobs
@@ -43,9 +46,7 @@ Leveraging serverless compute plattforms such as Azure Functions or AWS Lambda w
 - Developers can focus on coding and not on the underlying infrastructure.
 - Scaling is automatically handled for them.
 - Only pay for resources they acutally need.
-
 - Setting up triggers to server predictions using timers or events
-
 
 However, as already said, deploying serverless functions with R is currently quite complex for R users. The problem with the current cloud offerings is the limited range of supported languages. Usually only Javascript, Java, C#/F#, Go and Python are supported for serverless functions:
 
@@ -55,6 +56,7 @@ However, as already said, deploying serverless functions with R is currently qui
 
 Adding additional language runtimes such as R are possible in some cases and we believe that this would be a first step to give R users the option to leverage the power and ease-of-use of serverless computing.
 
+
 ## Overview
 
 Prototyp-Interface:
@@ -63,4 +65,5 @@ functions.json - bindings & triggers
 run.R - in, out
 
 ![Technical Overview](proposal/img/serverless.png)
+
 
