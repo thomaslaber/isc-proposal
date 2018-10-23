@@ -22,6 +22,7 @@ Working prototyp.
 How could this be extended / developed in the future by yourself and/or the community in general?
 -->
 
+In the envisioned final stage of this project, jobs can be send via an RStudio-GUI. Users can select from a list of supported cloud providers and enter their job specifications there. 
 
 ## Key risks
 <!-- 
@@ -34,4 +35,5 @@ What sort of things could come up that can delay or break the project?
 
 -->
 
+It is a fast-moving environment with new packages and developments on a weekly basis. 
 

@@ -21,10 +21,11 @@ Covering the actual delivery of the project this section should provide at least
 Including target dates is really important as you need to be committed and the ISC need to have a means of tracking delivery
 -->
 
+TBD
 
-
-## Other aspects
 <!--
+## Other aspects
+
 Covering non-technical activities like on-going publicity, paper preparation, discussion groups etc. that might be required to facilitate successful delivery of the project.
 
  - [ ] Announcement post

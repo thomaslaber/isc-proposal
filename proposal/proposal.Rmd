@@ -46,17 +46,18 @@ Azure functions runtime version 2 supports Docker images and therefore arbitrary
 Another major reason for us to choose Azure functions is the possibility to deploy the function runtime to different cloud providers such as AWS, Google, etc. 
 The project is under the umbrella of the .NET Foundation and is licensed under the MIT License, see [Azure Function Github](https://github.com/Azure/azure-functions-host/). 
 
-###Technical Implementation
+### Technical Implementation
 
 Azure Functions v2 are split into two components: 
 
 - host process 
 - language worker process
 
-The host process manages function events and the language worker process runs user functions for a given language. The processes communicate with each other by using gRPC ["duplex stream of StreamingMessages, which are the protobuf messages \[...\]. The host runs the gRPC server, and the language worker processes act as clients."](https://github.com/Azure/azure-functions-host/wiki/Language-Extensibility).
+The host process manages function events and the language worker process runs user functions for a given language. The processes communicate with each other by using gRPC ["duplex stream of StreamingMessages, which are the protobuf messages [...]. The host runs the gRPC server, and the language worker processes act as clients."](https://github.com/Azure/azure-functions-host/wiki/Language-Extensibility)
 
 The following graphic shows an architecture overview:
-![Architecture](/proposal/Architecture.png)
+
+![Architecture](proposal/img/architecture.png)
 
 The Protobuf contract can be found [here](https://github.com/Azure/azure-functions-language-worker-protobuf/blob/dev/src/proto/FunctionRpc.proto).
 
@@ -70,7 +71,7 @@ Azure Functions Linux consumption plan: https://github.com/Azure/Azure-Functions
 Cross platform hosting: https://github.com/Azure/azure-functions-host/wiki/Azure-Functions-Runtime-2.0-Overview
 Proto Contract: https://github.com/Azure/azure-functions-host/wiki/Language-Extensibility-->
 
-##Possible extensions
+## Possible extensions
 
 Every runtime supporting Docker images can be used to run serverless R functions: 
 

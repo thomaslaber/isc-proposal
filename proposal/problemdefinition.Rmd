@@ -52,6 +52,6 @@ However, as already said, deploying serverless functions with R is currently qui
 
 Adding additional language runtimes such as R are possible in some cases and we believe that this would be a first step to give R users the option to leverage the power and ease-of-use of serverless computing.
 
-INSERT PICTURE SHOWING ARCHITECTURE
+<!--INSERT PICTURE SHOWING ARCHITECTURE-->
 
 
