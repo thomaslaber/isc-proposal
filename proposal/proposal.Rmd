@@ -21,7 +21,6 @@ We want to build a CLI to provision:
 - Serverless batch jobs
 - Serverless functions
 
-
 ## Detail
 <!--
 Go into more detail about the specifics of the project and it delivers against the problem.
@@ -33,8 +32,31 @@ Depending on project type the detail section should include:
  - [ ] Assumptions
 -->
 
-- Batch: Extent doAzureParallel()
+To keep the scope of the project manageable and because most of our experience is with Microsoft Azure, we plan to build the following Minimum Viable Product:
+
+- Extent the rAzure package to setup serverless batch clusters using R based Docker images
+- Build an R-language worker to run on Azure Functions or alternatively on Azure Container Instances
+
+The rAzure package already allows specification of compute pools, jobs and tasks and we want to extent its functionality to include setting up compute schedules for recurring batch jobs.
+
+The main part of our work will focus on developing an R-language worker for Azure functions.
+
+Azure functions runtime version 2 supports Docker images and therefore arbitrary language workers as long as they implement gRPC to talk to the host process.
+
+
+From Azure website:
+> For gRPC, we currently have one call which creates a duplex stream of StreamingMessages, which are the protobuf messages defined below. All messages between host and worker flow across this bi-directional stream. The host runs the gRPC server, and the language worker processes act as clients.
+
 - Functions: 
+Azure Functions: https://azure.microsoft.com/en-us/blog/introducing-azure-functions-2-0/
+Azure Functions Linux consumption plan: https://github.com/Azure/Azure-Functions/wiki/Azure-Functions-on-Linux-Preview
+Cross platform hosting: https://github.com/Azure/azure-functions-host/wiki/Azure-Functions-Runtime-2.0-Overview
+
+AWS Lambda : https://github.com/grycap/scar
 
 Serverless R - Framework for Azure/Fn/OpenWhisk/Kubernetes (anything with Docker support really). RStudio-CLI for deploying R-serverless-jobs. 
 
+- Batch: Extent doAzureParallel()
+- Functions: 
+
+Serverless R - Framework for Azure/Fn/OpenWhisk/Kubernetes (anything with Docker support really). RStudio-CLI for deploying R-serverless-jobs.
