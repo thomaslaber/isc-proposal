@@ -11,7 +11,6 @@ It is important to cover:
 -->
 
 
-
 ## Problem Definition
 
 R is a great language for rapid prototyping and experimentation, but putting an R model in production is still more complex and time-consuming than it needs to be. With the growing popularity of serverless computing frameworks we see a a huge chance to allow R developers to easily deploy their code into production in a plattform independent manner.
@@ -28,14 +27,17 @@ Training can usually be handled with batch jobs and there are various offerings 
 - AWS Batch
 - Google Compute Engine
 
+
 While the support for Docker images allows us to run workloads on any provider that supports Docker the lack of a consistent API for:
+
 
 - defining compute pool resources (e.g. 3 nodes, ubuntu with 2 cores each)
 - defining jobs
 - defining tasks for a job and
-- defining task schedules
+- defining task schedules.
 
-means that R developers still need to spend quite some time learning the APIs of whichever cloud provider they use. In many cases this also means having to work with JavaScript, Python etc. to interact with the respective APIs. Packages such as `doAzureParallel` already try to bridge the gap for R users who want to run workloads on Azure Batch clusters from the comfort of their R session.
+This means that R developers still need to spend quite some time learning the APIs of whichever cloud provider they use. In many cases this also means having to work with JavaScript, Python, etc. to interact with the respective APIs. Packages such as [`doAzureParallel`](https://github.com/Azure/doAzureParallel) already try to bridge the gap for R users who want to run workloads on Azure Batch clusters from the comfort of their R session.
+
 
 While serverless batch computing with R is already doable, deploying serverless R functions on plattforms such as Azure Functions or AWS Lambda is at the time of this writing very complex/not possible.
 
@@ -52,7 +54,7 @@ However, as already said, deploying serverless functions with R is currently qui
 - [AWS](https://aws.amazon.com/lambda/faqs/): JavaScript (Node.js), Python, Java, C# and Go
 - [Google Cloud](https://cloud.google.com/functions/docs/writing/): JavaScript (Node.js), Python
 
-Adding additional language runtimes such as R is possible in some cases and we believe that this would be a first step to give R users the option to leverage the power and ease-of-use of serverless computing.
+Adding additional language runtimes such as R are possible in some cases and we believe that this would be a first step to give R users the option to leverage the power and ease-of-use of serverless computing.
 
 
 ## Overview
@@ -63,8 +65,5 @@ functions.json - bindings & triggers
 run.R - in, out
 
 ![Technical Overview](proposal/img/serverless.png)
-
-
-
 
 
