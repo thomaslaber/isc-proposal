@@ -8,18 +8,18 @@ This is where the proposal should be outlined.
 At a high-level address what your proposal is and how it will address the problem identified. Highlight any benefits to the R Community that follow from solving the problem. This should be your most compelling section.
 -->
 
-We want to help R developers to leverage serverless computing for training and scoring R models. We want to build a plattform independent framework that allows R developers to deploy their solution to different cloud providers with a consistent, unified API.
+We want to help R developers to leverage serverless computing for training and scoring R models. We want to build a platform independent framework that allows R developers to deploy their solution to different cloud providers with a consistent, unified API.
 
 We want to build a framework similar to [serverless.com](http://serverless.com/) but specifically targeted to R users.
 
 R developers should be able to:
 
 - deploy arbitrary R code using an arbitary R runtime
-- using a consistent API for different cloud providers
+- use a consistent API for selected cloud providers
 
-We want to build a CLI to provision:
-- Serverless batch jobs
-- Serverless functions
+We want to build an R package to provision:
+- serverless batch jobs
+- serverless functions
 
 ## Detail
 <!--
@@ -34,30 +34,52 @@ Depending on project type the detail section should include:
 
 To keep the scope of the project manageable and because most of our experience is with Microsoft Azure, we plan to build the following Minimum Viable Product:
 
-- Extent the rAzure package to setup serverless batch clusters using R based Docker images
-- Build an R-language worker to run on Azure Functions or alternatively on Azure Container Instances
+- Extent the [rAzureBatch package](https://github.com/Azure/rAzureBatch) to setup serverless batch clusters using R-based Docker images.
+- Build an R-language worker to run on Azure Functions or alternatively on Azure Container Instances.
 
-The rAzure package already allows specification of compute pools, jobs and tasks and we want to extent its functionality to include setting up compute schedules for recurring batch jobs.
+The rAzureBatch package already allows specification of compute pools, jobs and tasks and we want to extent its functionality to include setting up compute schedules for recurring batch jobs.
 
 The main part of our work will focus on developing an R-language worker for Azure functions.
 
-Azure functions runtime version 2 supports Docker images and therefore arbitrary language workers as long as they implement gRPC to talk to the host process.
+Azure functions runtime version 2 supports Docker images and therefore arbitrary language workers as long as they implement gRPC to talk to the host process. 
 
+Another major reason for us to choose Azure functions is the possibility to deploy the function runtime to different cloud providers such as AWS, Google, etc. 
+The project is under the umbrella of the .NET Foundation and is licensed under the MIT License, see [Azure Function Github](https://github.com/Azure/azure-functions-host/). 
 
-From Azure website:
-> For gRPC, we currently have one call which creates a duplex stream of StreamingMessages, which are the protobuf messages defined below. All messages between host and worker flow across this bi-directional stream. The host runs the gRPC server, and the language worker processes act as clients.
+###Technical Implementation
 
-- Functions: 
+Azure Functions v2 are split into two components: 
+
+- host process 
+- language worker process
+
+The host process manages function events and the language worker process runs user functions for a given language. The processes communicate with each other by using gRPC ["duplex stream of StreamingMessages, which are the protobuf messages \[...\]. The host runs the gRPC server, and the language worker processes act as clients."](https://github.com/Azure/azure-functions-host/wiki/Language-Extensibility).
+
+The following graphic shows an architecture overview:
+![Architecture](/proposal/Architecture.png)
+
+The Protobuf contract can be found [here](https://github.com/Azure/azure-functions-language-worker-protobuf/blob/dev/src/proto/FunctionRpc.proto).
+
+There is already some groundwork being done to implement [gRPC for  R](https://github.com/nfultz/grpc). However, the last commits dates back to December 2017. We consider building on this foundation. The [RProtoBuf package](https://cran.r-project.org/web/packages/RProtoBuf/index.html) by Dirk Eddelbuettel and others already implements the protocol buffer serialization.
+
+Our main focus would be on finishing the gRPC implementation for R. Since gRPC allows communication between arbitrary languages this would potentionally also be of interest for work outside the scope of this project. 
+
+<!--- Functions: 
 Azure Functions: https://azure.microsoft.com/en-us/blog/introducing-azure-functions-2-0/
 Azure Functions Linux consumption plan: https://github.com/Azure/Azure-Functions/wiki/Azure-Functions-on-Linux-Preview
 Cross platform hosting: https://github.com/Azure/azure-functions-host/wiki/Azure-Functions-Runtime-2.0-Overview
+Proto Contract: https://github.com/Azure/azure-functions-host/wiki/Language-Extensibility-->
 
-AWS Lambda : https://github.com/grycap/scar
+##Possible extensions
 
-Serverless R - Framework for Azure/Fn/OpenWhisk/Kubernetes (anything with Docker support really). RStudio-CLI for deploying R-serverless-jobs. 
+Every runtime supporting Docker images can be used to run serverless R functions: 
 
-- Batch: Extent doAzureParallel()
-- Functions: 
+- [Azure Functions](https://azure.microsoft.com/en-us/services/functions/)
+- [Fn](https://fnproject.io/)
+- [OpenWhisk](https://openwhisk.apache.org/)
+- [Kubernetes (Kubeless)](https://github.com/kubeless/kubeless)
 
-Serverless R - Framework for Azure/Fn/OpenWhisk/Kubernetes (anything with Docker support really). RStudio-CLI for deploying R-serverless-jobs.
+AWS Lambda is currently officially not supporting Docker, but there is an experimental implementation: 
+- [AWS Lambda Docker with Scar](https://github.com/grycap/scar)
 
+Given that AWS Lambda is the leading cloud provider for serverless functions native integration would be extremely desirable but depends on Amazon.  
