@@ -18,6 +18,7 @@ R developers should be able to:
 - use a consistent API for selected cloud providers
 
 We want to build an R package to provision:
+
 - serverless batch jobs
 - serverless functions
 
