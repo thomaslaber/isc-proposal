@@ -32,11 +32,13 @@ Who are the people who have actively helped with this proposal but won't necessa
 Who has been given the opportunity to provide feedback on the proposal? This should include any R Consortium & ISC members who the proposal has been discussed with.
 -->
 
-- [Kurt Hornik](https://de.wikipedia.org/wiki/Kurt_Hornik)
+We discussed our proposal with:
+
+- [Kurt Hornik](https://www.wu.ac.at/statmath/faculty-staff/faculty/khornik/) - Member R Core team
 - [David Smith](https://www.linkedin.com/in/dmsmith/) - Cloud Developer Advocate at Microsoft
 <!--(Email: davidsmi@microsoft.com) *ToDo:* We should reach out to this guy: https://www.linkedin.com/in/dmsmith/
 Weil: https://www.r-consortium.org/about/governance 
 - [Florian Motlik](https://www.linkedin.com/in/florianmotlik/) - Founder Cloudthropology, Former serverless.com- and Codeship-CTO -->
 - [Joseph Noronha](https://www.linkedin.com/in/josephnoronha/) - Director at Detecon USA
-- [Florian Schwendinger](https://github.com/FlorianSchwendinger)
+- [Florian Schwendinger](https://github.com/FlorianSchwendinger) - Researcher Vienna University of Economics and Business
 

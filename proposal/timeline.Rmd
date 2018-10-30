@@ -10,9 +10,14 @@ Covering the planning phase, this section should provide a relatively detailed p
  - [ ] Reporting framework
 -->
 
-1. Collaboration platform: All code will hosted publicly on a git repository. All contributors will have clear responsabilites and work packages.
-2. Licence: We are planning to license under the commonly used [MIT License](https://www.r-project.org/Licenses/MIT).
-3. Reporting: As mentioned above, ideally github will serve as main collaboration platform. Therefore, all changes, progress and issues will be reported there.
+We plan to work the following way:
+
+1. Setup a collaboration platform: All code will be hosted publicly on Github. All contributors will have clear responsabilites and work packages.
+2. We will track all work items in Github projects using Kanban boards.
+3. Licence: We are planning to license under the commonly used [MIT License](https://www.r-project.org/Licenses/MIT).
+4. Reporting: As mentioned above, ideally Github will serve as main collaboration platform. Therefore, all changes, progress and issues will be reported there.
+5. We will setup a Slack channel to give all people interested in contributing a platform to share ideas.
+
 
 ## Technical delivery
 <!--
@@ -21,8 +26,20 @@ Covering the actual delivery of the project this section should provide at least
 Including target dates is really important as you need to be committed and the ISC need to have a means of tracking delivery
 -->
 
-TBD
+We plan to kick-off the project by evaluating the work down by [Neal Fultz](https://github.com/nfultz/grpc) on the gRPC R package and building on his work if possible to add the necessary functionality for Azure Functions.
 
+Since accepted proposals are going to be announced by December 1st, our time line would be:
+
+1. 31-12-2019: Code review of work done in gRPC package by Neal Fultz
+2. 15-01-2019: Establish open points and create Github backlog
+3. 31-03-2019: Add Streaming services to gRPC package
+4. 31-05-2019: Add Authentication and Encryption (if necessary)
+5. 30-06-2019: Build R package and boilerplate code for Azure Functions
+6. 31-07-2019: Finished R Azure Functions package
+
+We saw that there was a pull request from [Gergely Daróczi](https://github.com/daroczig) a couple of days ago and we would also try to contact him and ask if he is interested in working with us.
+
+We will continually look for people willing to help us so we can together create a great solution for R users.
 <!--
 ## Other aspects
 
