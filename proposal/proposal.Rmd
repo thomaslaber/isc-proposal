@@ -62,7 +62,7 @@ The following graphic shows an architecture overview:
 
 The Protobuf contract can be found [here](https://github.com/Azure/azure-functions-language-worker-protobuf/blob/dev/src/proto/FunctionRpc.proto).
 
-There is already some groundwork being done to implement [gRPC for  R](https://github.com/nfultz/grpc). However, the last commits dates back to December 2017. We consider building on this foundation. The [RProtoBuf package](https://cran.r-project.org/web/packages/RProtoBuf/index.html) by Dirk Eddelbuettel and others already implements the protocol buffer serialization.
+There is already some groundwork being done to implement [gRPC for  R](https://github.com/nfultz/grpc). However, the last commits date back to December 2017. We consider building on this foundation. The [RProtoBuf package](https://cran.r-project.org/web/packages/RProtoBuf/index.html) by Dirk Eddelbuettel and others already implements the protocol buffer serialization.
 
 Our main focus would be on finishing the gRPC implementation for R. Since gRPC allows communication between arbitrary languages this would potentionally also be of interest for work outside the scope of this project. 
 
@@ -82,6 +82,7 @@ Every runtime supporting Docker images can be used to run serverless R functions
 - [Kubernetes (Kubeless)](https://github.com/kubeless/kubeless)
 
 AWS Lambda is currently officially not supporting Docker, but there is an experimental implementation: 
+
 - [AWS Lambda Docker with Scar](https://github.com/grycap/scar)
 
 Given that AWS Lambda is the leading cloud provider for serverless functions native integration would be extremely desirable but depends on Amazon.  
