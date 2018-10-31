@@ -35,8 +35,8 @@ Depending on project type the detail section should include:
 
 To keep the scope of the project manageable and because most of our experience is with Microsoft Azure, we plan to build the following Minimum Viable Product:
 
-- Extent the [rAzureBatch package](https://github.com/Azure/rAzureBatch) to setup serverless batch clusters using R-based Docker images.
 - Build an R-language worker to run on Azure Functions or alternatively on Azure Container Instances.
+- Optional: Extent the [rAzureBatch package](https://github.com/Azure/rAzureBatch) to setup serverless batch clusters using R-based Docker images.
 
 The rAzureBatch package already allows specification of compute pools, jobs and tasks and we want to extent its functionality to include setting up compute schedules for recurring batch jobs.
 

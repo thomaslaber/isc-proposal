@@ -41,3 +41,7 @@ What sort of things could come up that can delay or break the project?
 -->
 
 The biggest unknown is implementing gRPC for R to setup communication between the host and client process. However, since gRPC libraries exist for C++ and Python, we could wrap those libraries in the worst case if no native R implementation is possible with acceptable effort.
+
+# Conclusion
+
+serveRless hopes to improve the way R users interact with various cloud providers and help to fully take advantages of their benefits. Due to certain technical constraints the first PoC will be implemented on MS Azure. However, other providers will follow as feasible. In summary, a new type of infrastructure becomes available to the common R user.
