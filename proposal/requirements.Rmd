@@ -8,7 +8,7 @@ An idea of what is required to make the project actually happen
 Who needs to be involved, what's the proposed structure, what will it take to get their involvement?
 -->
 
-We do believe that the mentioned project team should be enough to succesfully finish the project.
+We do believe that the mentioned project team should be enough to succesfully finish the project. We are in contact with Microsoft's product team responsible for Azure Batch and Azure Functions.
 
 
 ## Processes
@@ -16,7 +16,7 @@ We do believe that the mentioned project team should be enough to succesfully fi
 What processes need to be put in place e.g. codes of conduct, regular ISC meetings, handover to the community at large?
 -->
 
-Nothing we can think of right now. 
+We will setup a Github repository with a project page where we track all work items on Github's kanban board. We will also setup a Slack channel for the development team and further potential contributors. We plan to setup a CI pipeline for automated testing as well.
 
 
 ## Tools & Tech
@@ -28,8 +28,7 @@ Will cloud computing be used - if yes are there are necessary components that wi
 Are there tools or tech that don't exist that will be produced to facilitate the project?
 -->
 
-We should have all the tools and tech at hand. Support by selected cloud providers would be an asset of course. 
-
+Azure Functions v2 can be run in Docker containers and are therefore platform independent. Development and deployment can be done both locally or with a cloud provider of our choice. Since we are most comfortable working with Azure, we will leverage Azure's infrastructure.
 
 ## Funding
 <!-- 
@@ -37,7 +36,11 @@ We should have all the tools and tech at hand. Support by selected cloud provide
 
 -->
 
-TBD
+Our suggested funding requirements are:
+
+- USD 10,000 for 200 work-hours
+
+At a rate of EUR 50 per hour, this would translate to 200 hours for three developers and would also be used to cover development costs for cloud resources if necessary.
 
 
 ## Summary
@@ -45,5 +48,5 @@ TBD
 A summary of the requirements that contextualises the costs
 -->
 
-Time and brainpower should be the main reqirements. Support by the R community and cloud providers would be a plus. 
+Providing a serverless framework for R would enable data scientists to easily deploy models to production without having to bother with setting up infrastructure, patching systems and so forth.
 

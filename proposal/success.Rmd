@@ -8,21 +8,26 @@ Projects should have a definition of done that is measurable, and a thorough und
 What does success look like? 
 -->
 
-A working framework that enables R users to setup serverless R Azure functions using the R package. 
+A working framework that enables R users to setup serverless R Azure functions using an R package.
 
 ## Measuring success
 <!-- 
 How will we know when success is achieved, what markers can we use along the way 
 -->
 
-Working prototyp. 
+The following work packages will be completed:
+
+- rAzureBatch scheduling functionality integration to setup recurring batch jobs
+- development of an R gRPC package to use for Azure Functions
+- developement of an R template to setup Azure Functions
 
 ## Future work
 <!-- 
 How could this be extended / developed in the future by yourself and/or the community in general?
 -->
 
-In the envisioned final stage of this project, jobs can be send via an RStudio-GUI. Users can select from a list of supported cloud providers and enter their job specifications there. 
+In the envisioned final stage of this project, jobs can be send via an RStudio-GUI. Users can select from a list of supported cloud providers and enter their job specifications there.
+
 
 ## Key risks
 <!-- 
@@ -35,5 +40,4 @@ What sort of things could come up that can delay or break the project?
 
 -->
 
-It is a fast-moving environment with new packages and developments on a weekly basis. 
-
+The biggest unknown is implementing gRPC for R to setup communication between the host and client process. However, since gRPC libraries exist for C++ and Python, we could wrap those libraries in the worst case if no native R implementation is possible with acceptable effort.
