@@ -16,6 +16,8 @@ Who are the people responsible for actually delivering the project if the propos
 - Christoph Bodner
 - Thomas Laber
 - Florian Schwendinger
+- Neal Fultz
+- Gergely Daróczi
 
 
 ## Contributors
@@ -26,6 +28,8 @@ Who are the people who have actively helped with this proposal but won't necessa
 - Christoph Bodner
 - Thomas Laber
 - Florian Schwendinger
+- Neal Fultz
+- Gergely Daróczi
 
 ## Consulted
 <!-- 

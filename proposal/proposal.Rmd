@@ -8,9 +8,9 @@ This is where the proposal should be outlined.
 At a high-level address what your proposal is and how it will address the problem identified. Highlight any benefits to the R Community that follow from solving the problem. This should be your most compelling section.
 -->
 
-We want to help R developers to leverage serverless computing for training and scoring R models. We want to build a platform independent framework that allows R developers to deploy their solution to different cloud providers with a consistent, unified API.
+We want to help R developers to leverage serverless computing for training and scoring R models. We want to build a platform independent framework that allows R developers to deploy their solution to different cloud providers with a consistent, unified API. Therefore, R users will finally have seamless access to cloud infrastructure.
 
-We want to build a framework similar to [serverless.com](http://serverless.com/) but specifically targeted to R users.
+This is similar to the advantages that were created by the [serverless.com](http://serverless.com/)-framework but specifically targeted to R users: automatic scaling, pay-per execution and low overhead costs. 
 
 R developers should be able to:
 
