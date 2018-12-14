@@ -17,7 +17,7 @@ Who are the people responsible for actually delivering the project if the propos
 - Thomas Laber
 - Florian Schwendinger
 - Neal Fultz
-- Gergely Daróczi
+- Gergely Dar&oacute;czi
 
 
 ## Contributors
