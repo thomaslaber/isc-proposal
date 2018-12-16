@@ -30,7 +30,7 @@ We plan to kick-off the project by evaluating the work down by [Neal Fultz](http
 
 Since accepted proposals are going to be announced by December 1st, our time line would be:
 
-1. 31-12-2019: Code review of work done in gRPC package by Neal Fultz
+1. 31-12-2018: Code review of work done in gRPC package by Neal Fultz
 2. 15-01-2019: Establish open points and create Github backlog
 3. 31-03-2019: Add Streaming services to gRPC package
 4. 31-05-2019: Add Authentication and Encryption (if necessary)
